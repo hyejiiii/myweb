@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+
+<body>
+    <form action="check">
+        <fieldset>
+            <legend>
+                <h3>로그인 화면</h3>
+            </legend>
+            <table border="0">
+                <tr align="center">
+                    <td>아이디</td>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <td>패스워드</td>
+                    <td><input type="password" name="pw"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="로그인">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="member">
+        <fieldset>
+            <legend>
+                <h3>회원가입 화면</h3>
+            </legend>
+            <table border="0">
+                <tr>
+                    <td>ID</td>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <td>PW</td>
+                    <td><input type="text" name="pw"></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td><input type="radio" name="gender" value="woman" checked>남자 <input type="radio" name="gender"
+                            value="man">여자</td><br>
+                <tr>
+                    <td>취미</td>
+                    <td><input type="checkbox" name="hobby" value="run">달리기
+                        <input type="checkbox" name="hobby" value="youtube" checked>동영상 보기
+                        <input type="checkbox" name="hobby" value="internet">인터넷서핑
+                    </td>
+                </tr>
+                <tr>
+                    <td>전화번호 통신사</td>
+                    <td> <select name="tel">
+                            <option value="sktelcom">SKT</option>
+                            <option value="ktelcom">KT</option>
+                            <option value="lgtelcom">LG</option>
+                            <option value="etc" selected>알뜰폰</option>
+                        </select>
+                        <input type="number" name="number" placeholder="-없이 숫자만 쓰세요."><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>생년월일</td>
+                    <td><input type="date"></td>
+                <tr>
+                    <td>가입한 시기</td>
+                    <td><input type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td>하고 싶은 말</td>
+                    <td><textarea name="word" id="" cols="30" rows="5" placeholder="100글자 이내로 써주세요."></textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button>회원가입</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

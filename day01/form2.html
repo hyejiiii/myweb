@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <h3>검색할 단어를 입력하세요.</h3>
+        <hr>
+        검색할 단어 <input type="text" name="find">
+        <button>검색 시작</button>
+    </form>
+    <hr>
+    <form action="check">
+        <h2>로그인 화면</h2>
+        아이디 <input type="text" name="id"> <br>
+        패스워드 <input type="password" name="pw"> <br>
+        <input type="submit" value="로그인 처리">
+        <!-- ctrl+/ : 자동주석 설정/해제 -->
+        <!-- 이클립스 단축키 ctrl + alt + 화살표(아래): 한줄복사 -->
+        <!-- 이클립스 단축키 ctrl + d: 한줄삭제 -->
+        <!-- 이클립스 단축키 alt + 화살표(아래): 한줄이동 -->
+        <!-- 여러줄인 경우 블록을 먼저 잡고 위에 단축키 -->
+    </form>
+    <hr>
+    <form action="member">
+        <h3>회원가입 화면</h3>
+        가입할id <input type="text" name="id"> <br>
+        가입할pw <input type="text" name="pw"> <br>
+        가입할name <input type="text" name="name"> <br>
+        성별 <input type="radio" name="gender" value="woman" checked>여 <input type="radio" name="gender" value="man">남
+        <br>
+        취미 <input type="checkbox" name="hobby" value="run">달리기
+            <input type="checkbox" name="hobby" value="youtube" checked>동영상 보기
+            <input type="checkbox" name="hobby" value="internet">인터넷서핑
+        <br>
+        전화번호 통신사
+        <select name="tel">
+            <option value="sktelcom">SKT</option>
+            <option value="ktelcom">KT</option>
+            <option value="lgtelcom">LG</option>
+            <option value="etc" selected>알뜰폰</option>
+        </select> 
+        <input type="number" name="number" placeholder="-없이 숫자만 쓰세요."><br>
+        생년월일 <input type="date"> <br>
+        가입한 시기 <input type="datetime-local">
+        <br>
+        하고 싶은 말
+        <textarea name="word" id="" cols="30" rows="5" placeholder="100글자 이내로 써주세요."></textarea><br>
+        <button>회원가입</button>
+    </form>
+</body>
+
+</html>
